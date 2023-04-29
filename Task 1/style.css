@@ -62,18 +62,4 @@ form {
   #submit-btn {
     font-size: 2em;
   }
-
-  #output h3 {
-    font-size: 28px;
-  }
-}
-
-/* Output styles */
-
-#output {
-  text-align: center;
-}
-
-#output h3 {
-  margin-bottom: 1rem;
 }
