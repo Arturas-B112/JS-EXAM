@@ -27,3 +27,41 @@
   margin-top: 50px;
   color: #333;
 }
+
+/* Brand styles */
+
+#output {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.brand-card {
+  width: 300px;
+  margin-top: 1rem;
+  outline: 1px solid black;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: rgb(243, 216, 180);
+}
+
+.brand-card .brand-name {
+  margin-bottom: 1rem;
+}
+
+.brand-card ul {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  #output {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #output {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
