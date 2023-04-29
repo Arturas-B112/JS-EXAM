@@ -12,9 +12,13 @@ const ENDPOINT = 'cars.json';
 const output = document.getElementById('output');
 
 const getCars = async () => {
-  const response = await fetch(ENDPOINT);
-  const data = await response.json();
-  renderCards(data);
+  try {
+    const response = await fetch(ENDPOINT);
+    const data = await response.json();
+    renderCards(data);
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 const renderCards = (arr) => {
