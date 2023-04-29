@@ -19,31 +19,3 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
-
-const filterDogOwners = (arr) => {
-  const dogOwners = arr.filter((el) => {
-    if (el.hasDog) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  console.log(dogOwners);
-  return dogOwners;
-};
-
-filterDogOwners(users);
-
-const filterAdults = (arr) => {
-  const adults = arr.filter((el) => {
-    if (el.age > 17) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  console.log(adults);
-  return adults;
-};
-
-filterAdults(users);
