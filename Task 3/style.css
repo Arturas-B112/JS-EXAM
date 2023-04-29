@@ -53,26 +53,9 @@
 }
 
 .output-cointainer #output {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  text-align: center;
   width: 80%;
   margin-top: 25px;
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
-}
-
-/* Output styles */
-
-#output .card-container {
-  margin: 0 auto;
-  outline: 1px solid black;
-  padding: 0.25rem;
-}
-
-#output .card-container img {
-  width: 150px;
-  height: 150px;
 }
